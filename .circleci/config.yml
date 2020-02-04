@@ -10,9 +10,13 @@ jobs:
     executor: dotnet
     steps:
       - checkout
-      - run: dotnet test
+      - run: dotnet tool install trx2junit
+      - run: "dotnet test --logger trx || : ; dotnet trx2junit dotnetProject/TestResults/*.trx --output results"
+      - store_test_results:
+          path: results
 
 workflows:
-  dev:
+  version: 2
+  test-flow:
     jobs:
       - test
