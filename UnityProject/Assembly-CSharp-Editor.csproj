@@ -65,7 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Editor\Test\TestSample.cs" />
+    <Compile Include="Assets\Scripts\Editor\TestSample.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/user/UnityProject/UnityTestFromDotnet/UnityProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

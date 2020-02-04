@@ -2,7 +2,6 @@
 
 public class TestSample
 {
-    
     [Test]
     public void Passed()
     {
